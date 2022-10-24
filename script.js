@@ -30,14 +30,17 @@ $(document).ready(function(){
         navText: ['PREV' ,'NEXT' ],
         responsive:{
             0:{
-               
+               nav :false,
+               items:1,
+               margin:0,
             },
             768:{
-                
+                items:2,
             },
            1140:{
              items:2,
              center:true,
+             dots:true,
              
            }
         }
