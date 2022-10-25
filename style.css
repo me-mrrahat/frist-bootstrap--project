@@ -80,7 +80,7 @@ section{
 .navbar-brand{
     font-weight: 700;
     font-size: 26px;
-    color: #092032;
+    /* color: #092032; */
 
 }
 .navbar-brand span{
@@ -241,4 +241,146 @@ section{
     display: inline-block ;
     vertical-align: middle;
     margin-right: 24px;
+}
+
+/*Team*/
+.team-member{
+    text-align: center;
+}
+.team-member .img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.team-member .overlay{
+    position:absolute;
+    top: -10%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 67, 19, 0.61);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member .social-link{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .overlay{
+    opacity:1;
+    top: 0;
+    
+}
+
+.team-member:hover .social-link{
+    opacity: 1;
+    top: 50%;
+}
+
+.team-member h5{
+    margin-top: 24px;
+}
+
+#reviews{
+     background-image:linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(./img/bg_banner1.jpg);
+}
+.reviwe {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+.reviwe img{
+    width: 85px !important;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.reviwe h4{
+    margin-top: 15px;
+
+}
+.reviwe h4,
+.reviwe p{
+    color: #fff;
+}
+.reviwe p{
+    margin-top: 20px;
+
+}
+
+.reviwe small{
+    color: #eb330e;
+}
+
+.owl-dot.active span{
+    background-color: #eb330e !important;
+}
+
+.blog-post{
+    position: relative;
+    box-sizing: border-box;
+}
+.blog-post .tag{
+    position:absolute;
+    top: 15px;
+    left: 10px;
+    background-color: #eb330e;
+    border-radius: 100px;
+    color: #fff;
+    padding:2px 9px;
+    font-size: 12px;
+    
+
+}
+
+.blog-post h4{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.blog-post img{
+    margin-bottom: 12px;
+}
+.blog-post small{
+    color: #eb330e;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.blog-post h4 a:hover{
+    color: #ff4d29;
+}
+.blog-post h4{
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer{
+    padding-top: 80px;
+    padding-bottom:40px ;
+    color: #fff;
+    text-align: center;
+    background-image:linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(./img/bg_banner1.jpg);
+
+}
+footer .navbar-brand{
+    color: #fff;
+}
+
+.footer-top{
+    margin-bottom: 40px;
+}
+.fotter-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 20px;
+}
+footer .social-link a{
+    margin-left: 5px;
+    margin-right: 5px;
 }
